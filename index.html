@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meal Planner</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <h1>Meal Planner</h1>
+        <p>Плануй своє харчування на весь тиждень</p>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- Статистика -->
+    <section class="stats">
+
+        <div class="stat-card">
+            <span>Заплановано страв</span>
+            <strong id="totalMeals">0</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Середній час приготування</span>
+            <strong>
+                <span id="averageTime">0</span> хв
+            </strong>
+        </div>
+
+    </section>
+
+
+    <!-- Рецепти -->
+    <section class="section">
+        <div class="section-header">
+            <div>
+                <h2>Рецепти</h2>
+                <p>Оберіть рецепт та додайте його до плану</p>
+            </div>
+            <input type="search" id="recipeSearch" class="search" placeholder="Пошук рецепту...">
+        </div>
+        <div class="recipes" id="recipesContainer"></div>
+    </section>
+
+
+    <!-- План -->
+    <section class="section">
+        <div class="section-header">
+            <div>
+                <h2>Мій план</h2>
+                <p>Заплановані страви на тиждень</p>
+            </div>
+            <div class="filters">
+                <input
+                    type="search"
+                    id="planSearch"
+                    class="search"
+                    placeholder="Пошук..."
+                >
+                <select id="dayFilter">
+                    <option value="all">Всі дні</option>
+                    <option value="monday">Понеділок</option>
+                    <option value="tuesday">Вівторок</option>
+                    <option value="wednesday">Середа</option>
+                    <option value="thursday">Четвер</option>
+                    <option value="friday">Пʼятниця</option>
+                    <option value="saturday">Субота</option>
+                    <option value="sunday">Неділя</option>
+                </select>
+            </div>
+        </div>
+        <div class="meal-plan" id="mealPlan"></div>
+    </section>
+</main>
+
+<footer class="footer">
+    Meal Planner
+</footer>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
