@@ -84,6 +84,24 @@
     Meal Planner
 </footer>
 
+<!-- Модальне вікно підтвердження видалення -->
+<div id="confirmModal" class="modal-overlay hidden">
+    <div class="modal-card">
+        <div class="modal-header">
+            <h3>Підтвердження видалення</h3>
+        </div>
+        <p class="modal-text" id="confirmModalText">
+            Ви впевнені, що бажаєте видалити цю страву з плану?
+        </p>
+        <div class="modal-actions">
+            <button type="button" id="modalCancelBtn" class="modal-btn-cancel">Скасувати</button>
+            <button type="button" id="modalConfirmBtn" class="modal-btn-delete">Видалити</button>
+        </div>
+    </div>
+</div>
+
+<div id="toastContainer" class="toast-container"></div>
+
 <script src="./script.js"></script>
 
 </body>
